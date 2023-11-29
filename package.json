@@ -1,5 +1,5 @@
 {
-  "name": "devasis-app",
+  "name": "devasis-ai",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,13 +9,30 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.3.2",
+    "@radix-ui/react-label": "^2.0.2",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-toast": "^1.1.5",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "lucide-react": "^0.294.0",
+    "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.3"
+    "react-hook-form": "^7.48.2",
+    "react-icons": "^4.12.0",
+    "tailwind-merge": "^2.0.0",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.22.4",
+    "zustand": "^4.4.7"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
+    "firebase": "^10.7.0",
     "postcss": "^8",
+    "prettier": "^3.1.0",
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "reactflow": "^11.10.1",
     "tailwindcss": "^3.3.0"
   }
 }
