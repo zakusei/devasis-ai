@@ -4,8 +4,9 @@
 <a href="https://gdsc.community.dev/western-mindanao-state-university/"><img src="https://i.ibb.co/6Rs5Mfq/download.png" width="150" height="150"></a>
 
 ### Overview
+This app is our entry for the GDSC Solution Challenge 2024! 🌐✨
 
-Devasis is a project management and learning platform designed to guide IT and Computer Science students through their coding project development. Leveraging artificial intelligence (AI), Devasis provides personalized tech stack recommendations, structured learning roadmaps, and interactive features to ensure a seamless and stress-free project development journey.
+Struggling with your capstone project? Devasis is a project management and learning platform designed to guide IT and Computer Science students through their app development. Leveraging artificial intelligence (AI), Devasis provides personalized tech stack recommendations, structured learning roadmaps, and interactive features to ensure a seamless and stress-free project development journey.
 
 ### Key Features
 
