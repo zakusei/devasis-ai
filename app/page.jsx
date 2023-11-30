@@ -1,16 +1,16 @@
 import FlexContainer from "@/components/layouts/Container";
+import Title from "@/components/layouts/Title";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { TiFolderAdd, TiFolder } from "react-icons/ti";
+import Footer from "@/components/layouts/Footer";
 
 const Home = () => {
   return (
     <FlexContainer>
-      <section className="grid w-full max-w-xs gap-2 rounded-md">
-        <h1 className="mb-6 w-full text-center text-3xl font-semibold">
-          D E V A S I S
-        </h1>
+      <section className="grid w-full max-w-xs gap-2.5 rounded-md">
+        <Title />
         <Link
           href="/create"
           className={cn(buttonVariants({ variant: "outline" }))}
@@ -23,6 +23,7 @@ const Home = () => {
           Open Project
         </Link>
       </section>
+      <Footer />
     </FlexContainer>
   );
 };
