@@ -1,4 +1,4 @@
-import FlexContainer from "@/components/layouts/Container";
+import Container from "@/components/layouts/Container";
 import Title from "@/components/layouts/Title";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
@@ -8,11 +8,11 @@ import Footer from "@/components/layouts/Footer";
 
 const Home = () => {
   return (
-    <FlexContainer>
-      <section className="grid w-full max-w-xs gap-2.5 rounded-md">
+    <Container className="justify-center">
+      <section className="mx-auto grid w-full max-w-xs gap-2.5 rounded-md">
         <Title />
         <Link
-          href="/create"
+          href="/new-project"
           className={cn(buttonVariants({ variant: "outline" }))}
         >
           <TiFolderAdd className="mr-2 h-4 w-4" />
@@ -24,7 +24,7 @@ const Home = () => {
         </Link>
       </section>
       <Footer />
-    </FlexContainer>
+    </Container>
   );
 };
 
