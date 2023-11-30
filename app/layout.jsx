@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.className} overflow-x-hidden md:container sm:px-24 md:px-64 xl:px-96`}
+        className={`${inter.className} overflow-x-hidden bg-background text-xs md:container`}
       >
         {children}
       </body>
