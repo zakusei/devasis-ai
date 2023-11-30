@@ -40,7 +40,7 @@ const NewProjectForm = () => {
         </div>
         <div className="relative mx-auto flex items-center justify-around text-muted-foreground">
           <Separator className="w-full" />
-          <span className="absolute bg-white p-2">OR</span>
+          <span className="absolute bg-background p-2">OR</span>
         </div>
         <div className="grid grid-cols-1 gap-2">
           <Label>Upload Capstone Document</Label>
