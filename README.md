@@ -1,7 +1,7 @@
 # Devasis AI: Project Development Assistant 🚀
 
 ### GDSC Chapter: Western Mindanao State University Crimsons
-<a href="https://gdsc.community.dev/western-mindanao-state-university/"><img src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/GDSC%2520Crimson.png" width="150" height="150"></a>
+<a href="https://gdsc.community.dev/western-mindanao-state-university/"><img src="https://i.ibb.co/6Rs5Mfq/download.png" width="150" height="150"></a>
 
 ### Overview
 
