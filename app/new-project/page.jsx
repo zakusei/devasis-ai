@@ -43,7 +43,7 @@ const NewProjectForm = () => {
           <span className="absolute bg-white p-2">OR</span>
         </div>
         <div className="grid grid-cols-1 gap-2">
-          <Label>Upload Capstone Document | Under Development</Label>
+          <Label>Upload Capstone Document</Label>
           <Input type="file" disabled />
         </div>
       </form>
