@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "@/styles/globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
+import { ModeToggle } from "@/components/toggle-mode";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,9 +14,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.className} dark overflow-x-hidden bg-background text-xs`}
+        className={`${inter.className} overflow-x-hidden bg-background text-xs`}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
