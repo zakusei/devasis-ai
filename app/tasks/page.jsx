@@ -1,10 +1,10 @@
-import Container from "@/components/layouts/Container";
-import Navbar from "@/components/layouts/Navbar";
+import Container from "@/components/layouts/container";
+import { TopNav } from "@/components/layouts/top-navigation";
 
 const Tasks = () => {
   return (
     <Container>
-      <Navbar />
+      <TopNav />
     </Container>
   );
 };
