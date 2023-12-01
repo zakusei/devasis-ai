@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
-import Container from "@/components/layouts/Container";
+import Container from "@/components/layouts/container";
 import { Button } from "@/components/ui/button";
 import { FileCode } from "lucide-react";
 
@@ -20,7 +20,7 @@ const NewProjectForm = () => {
   };
 
   return (
-    <Container>
+    <Container className="md:max-w-xl">
       <section>
         <h1 className="flex items-center text-2xl font-semibold">
           <FileCode className="mr-2" /> New Project

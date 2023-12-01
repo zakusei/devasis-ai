@@ -1,11 +1,11 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import Container from "@/components/layouts/Container";
-import Title from "@/components/layouts/Title";
+import Container from "@/components/layouts/container";
+import Title from "@/components/layouts/app-title";
 import { Button } from "@/components/ui/button";
 import { TbBrandGoogle, TbBrandGithub } from "react-icons/tb";
-import Footer from "@/components/layouts/Footer";
+import Footer from "@/components/layouts/footer";
 
 const SignIn = () => {
   const router = useRouter();

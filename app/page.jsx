@@ -1,10 +1,10 @@
-import Container from "@/components/layouts/Container";
-import Title from "@/components/layouts/Title";
+import Container from "@/components/layouts/container";
+import Title from "@/components/layouts/app-title";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { TiFolderAdd, TiFolder } from "react-icons/ti";
-import Footer from "@/components/layouts/Footer";
+import Footer from "@/components/layouts/footer";
 
 const Home = () => {
   return (
