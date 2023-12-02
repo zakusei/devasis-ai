@@ -19,7 +19,7 @@ export function ModeToggle() {
 
   return (
     <Button
-      className="fixed bottom-0 right-0 m-4 h-14 w-14"
+      className="fixed bottom-0 right-0 m-4 h-14 w-14 md:top-0"
       onClick={setMode}
       variant="link"
       size="icon"
