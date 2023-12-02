@@ -3,7 +3,7 @@ import Title from "@/components/layouts/app-title";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { TiFolderAdd, TiFolder } from "react-icons/ti";
+import { TiFolderAdd, TiFolder, TiSocialGithub } from "react-icons/ti";
 import Footer from "@/components/layouts/footer";
 
 const Home = () => {
@@ -21,6 +21,13 @@ const Home = () => {
         <Link href="#" className={cn(buttonVariants({ variant: "default" }))}>
           <TiFolder className="mr-2 h-4 w-4" />
           Open Project
+        </Link>
+        <Link
+          href="https://github.com/zakusei/devasis-ai"
+          className={cn(buttonVariants({ variant: "ghost" }))}
+        >
+          <TiSocialGithub className="mr-2 h-6 w-6" />
+          Github Repository
         </Link>
       </section>
       <Footer />
