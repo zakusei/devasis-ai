@@ -20,7 +20,7 @@ const NewProjectForm = () => {
   };
 
   return (
-    <Container className="md:max-w-xl">
+    <Container>
       <section>
         <h1 className="flex items-center text-2xl font-semibold">
           <FileCode className="mr-2" /> New Project
