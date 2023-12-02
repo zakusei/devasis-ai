@@ -81,19 +81,21 @@ const Chat = () => {
           </div>
         </section>
       </ScrollArea>
-      <div className="fixed inset-x-0 bottom-0 flex h-10 w-full items-center justify-between gap-0 border-t bg-background/10 p-8 backdrop-blur-xl md:container md:bottom-4 md:border-t-0 md:px-96">
-        <Input
-          type="text"
-          className="rounded-full rounded-r-none border-r-0 md:p-6"
-          placeholder="Type something here.."
-        />
-        <Button
-          variant="outline"
-          className="rounded-none rounded-r-full border-l-0 md:p-6"
-        >
-          <SendIcon className="h-4 w-6" />
-        </Button>
-      </div>
+      <section className="relative">
+        <div className="fixed inset-x-0 bottom-0 flex h-10 w-full items-center justify-between gap-0 border-t bg-background/10 p-8 backdrop-blur-xl md:container md:bottom-4 md:border-t-0">
+          <Input
+            type="text"
+            className="h-10 resize-none overflow-hidden rounded-full rounded-r-none border-r-0 md:p-6"
+            placeholder="Type something here.."
+          />
+          <Button
+            variant="outline"
+            className="rounded-none rounded-r-full border-l-0 md:p-6"
+          >
+            <SendIcon className="h-4 w-6" />
+          </Button>
+        </div>
+      </section>
       <TopNav />
     </Container>
   );
