@@ -2,7 +2,6 @@
 
 import { usePathname } from "next/navigation";
 import { ROUTES } from "@/constants/routes";
-// import { links } from "@/data/nav-links";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { HiOutlineMenuAlt4, HiOutlineX } from "react-icons/hi";
@@ -20,8 +19,7 @@ export const TopNav = () => {
     <header
       className={cn(
         `fixed inset-0 z-50 flex h-20 w-full items-center justify-start px-2 md:px-6 lg:top-0 xl:px-44`,
-        isNavOpen &&
-          `h-screen items-start bg-background/50 pt-[20px] backdrop-blur-md`,
+        isNavOpen && `h-screen items-start bg-background/95 pt-[20px] `,
       )}
     >
       <nav>
@@ -48,7 +46,7 @@ export const TopNav = () => {
                 )}
                 href={href}
               >
-                <span className="flex md:hidden">{icon}</span>
+                <span className="flex items-center md:hidden">{icon}</span>
                 {title}
               </Link>
             </li>
