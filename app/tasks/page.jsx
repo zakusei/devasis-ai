@@ -1,9 +1,18 @@
 import Container from "@/components/layouts/container";
 import { TopNav } from "@/components/layouts/top-navigation";
-import { Terminal, Laptop2, CheckIcon } from "lucide-react";
+import {
+  Terminal,
+  DatabaseIcon,
+  Code2Icon,
+  ListIcon,
+  Laptop2,
+  CheckIcon,
+} from "lucide-react";
+import { GoKebabHorizontal } from "react-icons/go";
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 import TaskItem from "@/components/task-item";
+import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
 const Tasks = () => {
@@ -11,105 +20,75 @@ const Tasks = () => {
     <Container>
       <TopNav />
       <div className="mt-12 grid grid-cols-1 md:mt-24 md:grid-cols-3">
-        <section className="h-full w-full p-4">
-          <h1 className="mb-6 flex text-sm font-semibold">
-            <Laptop2 className="mr-2 h-4 w-4" /> Frontend Development
-          </h1>
-          <ScrollArea className="h-96">
+        <section className="h-full w-full rounded-md p-4">
+          <div className="mb-2 flex justify-between">
+            <h1 className="flex items-center text-sm font-semibold">
+              <ListIcon className="mr-2 h-4 w-4" /> Todo List
+            </h1>
+            <Button variant="ghost">
+              <GoKebabHorizontal />
+            </Button>
+          </div>
+          <ScrollArea className="h-full">
             <TaskItem
-              title="Lorem ipsum."
-              icon={<Terminal className="h-4 w-4" />}
+              parent="Todo List"
+              title="Landing Page"
+              icon={<Code2Icon className="h-4 w-4" />}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </TaskItem>
             <TaskItem
-              title="Lorem ipsum."
-              icon={<Terminal className="h-4 w-4" />}
+              parent="Todo List"
+              title="Sign In Page"
+              icon={<Code2Icon className="h-4 w-4" />}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </TaskItem>
             <TaskItem
-              title="Lorem ipsum."
-              icon={<Terminal className="h-4 w-4" />}
+              parent="Todo List"
+              title="Sign Up Page"
+              icon={<Code2Icon className="h-4 w-4" />}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </TaskItem>
             <TaskItem
-              title="Lorem ipsum."
-              icon={<Terminal className="h-4 w-4" />}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </TaskItem>
-            <TaskItem
-              title="Lorem ipsum."
-              icon={<Terminal className="h-4 w-4" />}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </TaskItem>
-            <TaskItem
-              title="Lorem ipsum."
-              icon={<Terminal className="h-4 w-4" />}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </TaskItem>
-          </ScrollArea>
-        </section>
-        <section className="h-full w-full p-4">
-          <h1 className="mb-6 flex text-sm font-semibold">
-            <Terminal className="mr-2 h-4 w-4" /> Backend Development
-          </h1>
-          <ScrollArea className="h-96">
-            <TaskItem
-              title="Lorem ipsum."
-              icon={<Terminal className="h-4 w-4" />}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </TaskItem>
-            <TaskItem
-              title="Lorem ipsum."
-              icon={<Terminal className="h-4 w-4" />}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </TaskItem>
-            <TaskItem
-              title="Lorem ipsum."
-              icon={<Terminal className="h-4 w-4" />}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </TaskItem>
-            <TaskItem
-              title="Lorem ipsum."
-              icon={<Terminal className="h-4 w-4" />}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </TaskItem>
-            <TaskItem
-              title="Lorem ipsum."
-              icon={<Terminal className="h-4 w-4" />}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </TaskItem>
-            <TaskItem
-              title="Lorem ipsum."
-              icon={<Terminal className="h-4 w-4" />}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </TaskItem>
-            <TaskItem
-              title="Lorem ipsum."
-              icon={<Terminal className="h-4 w-4" />}
+              parent="Todo List"
+              title="Setup API Endpoints"
+              icon={<Code2Icon className="h-4 w-4" />}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </TaskItem>
           </ScrollArea>
         </section>
-        <section className="h-full w-full p-4">
-          <h1 className="mb-6 flex text-sm font-semibold">
-            <CheckIcon className="mr-2 h-4 w-4" /> Completed Tasks
-          </h1>
-          <ScrollArea className="h-96">
-            No task has been completed yet..
+        <section className="h-full w-full rounded-md p-4">
+          <div className="mb-2 flex justify-between">
+            <h1 className="flex items-center text-sm font-semibold">
+              <Code2Icon className="mr-2 h-4 w-4" /> In Progress
+            </h1>
+            <Button variant="ghost">
+              <GoKebabHorizontal />
+            </Button>
+          </div>
+          <ScrollArea className="h-full">
+            <TaskItem
+              parent="In Progress"
+              title="Database Schema"
+              icon={<DatabaseIcon className="h-4 w-4" />}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </TaskItem>
           </ScrollArea>
+        </section>
+        <section className="h-full w-full rounded-md p-4">
+          <div className="mb-2 flex justify-between">
+            <h1 className="flex items-center text-sm font-semibold">
+              <CheckIcon className="mr-2 h-4 w-4" /> Completed
+            </h1>
+            <Button variant="ghost">
+              <GoKebabHorizontal />
+            </Button>
+          </div>
+          <ScrollArea className="h-full"></ScrollArea>
         </section>
       </div>
     </Container>
