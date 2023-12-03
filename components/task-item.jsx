@@ -55,9 +55,6 @@ const TaskItem = ({ title, children, icon, parent, className }) => {
               Close
             </Button>
           </DialogClose>
-          <Button type="button" variant="default">
-            Mark as done
-          </Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>
