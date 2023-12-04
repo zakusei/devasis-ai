@@ -13,7 +13,8 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { FaAlignLeft, FaTrash } from "react-icons/fa";
+import { FaAlignLeft, FaTrash, FaLayerGroup } from "react-icons/fa";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const TaskItem = ({ title, children, icon, parent, className }) => {
   return (
@@ -24,7 +25,7 @@ const TaskItem = ({ title, children, icon, parent, className }) => {
           <AlertTitle className="text-xs">{title}</AlertTitle>
         </Alert>
       </DialogTrigger>
-      <DialogContent className="rounded-md sm:max-w-2xl">
+      <DialogContent className="max-w-sm rounded-md sm:max-w-xl md:max-w-2xl">
         <DialogHeader>
           <DialogTitle>
             <span className="flex gap-2">
@@ -48,6 +49,20 @@ const TaskItem = ({ title, children, icon, parent, className }) => {
             </Button>
           </div>
           <p className="h-24 w-full rounded-md bg-secondary p-4">{children}</p>
+        </div>
+        <div className="grid grid-cols-1">
+          <div className="flex justify-between">
+            <span className="mb-2 flex items-center gap-2 text-sm font-semibold">
+              <FaLayerGroup />
+              Learning Resources
+            </span>
+          </div>
+          <div className="grid grid-cols-2 gap-2">
+            <Skeleton className="h-16 w-full" />
+            <Skeleton className="h-16 w-full" />
+            <Skeleton className="h-16 w-full" />
+            <Skeleton className="h-16 w-full" />
+          </div>
         </div>
         <DialogFooter className="gap-2 sm:justify-between sm:gap-0">
           <DialogClose asChild>
